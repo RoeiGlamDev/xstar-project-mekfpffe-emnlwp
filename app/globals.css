@@ -1,0 +1,65 @@
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif; /*  Elegant font */
+    background-color: #fff; /*  White background for luxury feel */
+    color: #333; /*  Dark text for contrast */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #d5006d; /*  Pink color for headings */
+    font-weight: bold;
+  }
+
+  p {
+    line-height: 1.6;
+    margin: 0 0 1.5em;
+  }
+
+  a {
+    color: #d5006d; /*  Pink links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #a40050; /*  Darker pink on hover */
+    }
+  }
+
+  button {
+    background-color: #d5006d; /*  Pink button background */
+    color: #fff; /*  White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #a40050; /*  Darker pink on hover */
+    }
+  }
+
+  /*  Additional styles for luxury feel */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .header, .footer {
+    background-color: #f8f8f8; /*  Light background for header/footer */
+    padding: 20px 0;
+  }
+
+  .card {
+    border: 1px solid #e0e0e0; /*  Subtle border for cards */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /*  Soft shadow for depth */
+  }
+`;
+
+export default GlobalStyle;
